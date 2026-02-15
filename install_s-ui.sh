@@ -159,6 +159,7 @@ install_s-ui() {
     tar zxvf s-ui-linux-$(arch).tar.gz
     rm s-ui-linux-$(arch).tar.gz -f
     chmod +x s-ui/sui
+    chmod +x s-ui/s-ui.sh  # 修复权限问题
     s-ui/s-ui.sh
     cp s-ui/s-ui.sh /usr/bin/s-ui
     cp -rf s-ui /usr/local/
